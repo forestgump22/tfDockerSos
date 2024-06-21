@@ -1,0 +1,19 @@
+{
+  "name": "tfdockersos",
+  "version": "1.0.0",
+  "description": "API REST usando Express y Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "docker": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.19.2",
+    "mongoose": "^7.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0"
+  }
+}
