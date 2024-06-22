@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors"); // Importar el middleware cors
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -9,6 +10,9 @@ const postRoutes = require("./routes/posts");
 // Middleware para analizar JSON
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Habilitar CORS
+app.use(cors());
 
 // Conectar a MongoDB
 mongoose
